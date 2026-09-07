@@ -29,4 +29,6 @@ def start():
          case _:
             clear_terminal()
             print("\nInvalid option. Try again.")
-start()
+
+if __name__ == "__main__":
+   start()
