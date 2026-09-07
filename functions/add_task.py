@@ -1,4 +1,5 @@
 from data.tasks import tasks
+from functions.clear_terminal import clear_terminal
 
 def generate_task_id():
    if tasks:
@@ -13,6 +14,7 @@ def generate_task_id():
       return 1
    
 def add_task():
+   clear_terminal()
    print("\n=== Add Task ===")
    
    print("\nEnter task title: ")
@@ -25,3 +27,6 @@ def add_task():
       "task_title": task_title,
       "completed": False
    })
+   
+   clear_terminal()
+   print(f"Task '{task_title}' created")

@@ -2,6 +2,7 @@ from functions.add_task import add_task
 from functions.list_tasks import list_tasks
 from functions.complete_task import complete_task
 from functions.delete_task import delete_task
+from functions.clear_terminal import clear_terminal
 
 def start():
    while True:
@@ -26,6 +27,6 @@ def start():
          case "5":
             break
          case _:
+            clear_terminal()
             print("\nInvalid option. Try again.")
-
 start()
