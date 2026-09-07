@@ -4,4 +4,4 @@ def list_tasks():
    if tasks:
       print(tasks)
    else:
-      print("There's no tasks created")
+      print("\nThere's no tasks created")
