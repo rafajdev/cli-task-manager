@@ -9,8 +9,9 @@ def aux(task_id):
             task["completed"] = True
             
             print(f"\nTask '{task["task_title"]}' completed")
-         else:
-            print("\nTask not found")
+            return
+      
+      print("\nTask not found")
    else:
       print("\nThere's no tasks created")
 
