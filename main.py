@@ -1,3 +1,7 @@
+from functions.add_task import add_task
+from functions.list_tasks import list_tasks
+from functions.complete_task import complete_task
+from functions.delete_task import delete_task
 
 def start():
    while True:
@@ -12,13 +16,13 @@ def start():
       
       match user_input:
          case "1":
-            print("Add task")
+            add_task()
          case "2":
-            print("List tasks")
+            list_tasks()
          case "3":
-            print("Complete task")
+            complete_task()
          case "4":
-            print("Delete task")
+            delete_task()
          case "5":
             break
          case _:
