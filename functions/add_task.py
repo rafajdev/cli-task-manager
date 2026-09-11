@@ -29,4 +29,4 @@ def add_task():
    })
    
    clear_terminal()
-   print(f"Task '{task_title}' created")
+   print(f"\nTask '{task_title}' created")
