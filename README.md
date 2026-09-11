@@ -47,12 +47,6 @@ Tasks can be completed or deleted using their ID.
 
 The program also handles basic invalid input, such as unknown menu options or task IDs that don't exist.
 
-## Project files
+## Requirements
 
-```text
-task-manager/
-├── PROJECT.md
-└── main.py
-```
-
-Only Python 3 is required. There are no external dependencies or database setup.
+Python 3 is the only requirement. The project has no external dependencies or database setup.
