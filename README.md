@@ -1,6 +1,6 @@
 # Task Manager CLI
 
-**Version: Alpha 1.0.0**
+## Version: Alpha 1.0.0
 
 A small Python CLI for keeping track of tasks from the terminal.
 
