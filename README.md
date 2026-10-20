@@ -1,5 +1,7 @@
 # Task Manager CLI
 
+**Version: Alpha 1.0.0**
+
 A small Python CLI for keeping track of tasks from the terminal.
 
 You can add tasks, list them, mark them as completed, or delete them. Tasks are kept in memory, so the list is cleared when the program closes.
@@ -15,7 +17,7 @@ python main.py
 You'll get a simple menu:
 
 ```text
-=== Task Manager ===
+=== Task Manager Alpha 1.0 ===
 
 1. Add task
 2. List tasks

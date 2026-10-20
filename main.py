@@ -3,10 +3,11 @@ from functions.list_tasks import list_tasks
 from functions.complete_task import complete_task
 from functions.delete_task import delete_task
 from functions.clear_terminal import clear_terminal
+from version import __version__
 
 def start():
    while True:
-      print("\n=== Task Manager ===")
+      print(f"\n=== Task Manager {__version__} ===")
       print("\n1. Add task")
       print("2. List tasks")
       print("3. Complete task")
