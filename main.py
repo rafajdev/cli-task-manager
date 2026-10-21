@@ -27,13 +27,18 @@ def start():
             case 4:
                delete_task()
             case 5:
+               print("Exiting...")
                break
             case _:
                clear_terminal()
                print("\nInvalid option. Try again.")
-      except:
+      except ValueError:
          clear_terminal()
          print("\nInvalid option. Try again.")
+      except KeyboardInterrupt:
+         print("\nExiting...")
+         break
+         
 
 if __name__ == "__main__":
    start()
