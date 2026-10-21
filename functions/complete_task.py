@@ -32,4 +32,4 @@ def complete_task():
       aux(task_id)
    except ValueError:
       clear_terminal()
-      print("\nInvalid option. Try again.")
+      print("\nInvalid ID. Try again.")
