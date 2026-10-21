@@ -24,6 +24,11 @@ def delete_task():
    print("\n=== Delete Task ===")
       
    print("\nEnter task id: ")
-   task_id = input("> ")
    
-   aux(int(task_id))
+   try:
+      task_id = int(input("> "))
+   
+      aux(task_id)
+   except ValueError:
+      clear_terminal()
+      print("\nInvalid option. Try again.")

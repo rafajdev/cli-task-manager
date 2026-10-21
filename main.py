@@ -14,22 +14,26 @@ def start():
       print("4. Delete task")
       print("5. Exit")
       
-      user_input = input("\n> ")
+      try:
+         user_input = int(input("\n> "))
       
-      match user_input:
-         case "1":
-            add_task()
-         case "2":
-            list_tasks()
-         case "3":
-            complete_task()
-         case "4":
-            delete_task()
-         case "5":
-            break
-         case _:
-            clear_terminal()
-            print("\nInvalid option. Try again.")
+         match user_input:
+            case 1:
+               add_task()
+            case 2:
+               list_tasks()
+            case 3:
+               complete_task()
+            case 4:
+               delete_task()
+            case 5:
+               break
+            case _:
+               clear_terminal()
+               print("\nInvalid option. Try again.")
+      except:
+         clear_terminal()
+         print("\nInvalid option. Try again.")
 
 if __name__ == "__main__":
    start()
